@@ -1,0 +1,15 @@
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\bin\Debug\net6.0\sandbox.exe
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\bin\Debug\net6.0\sandbox.deps.json
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\bin\Debug\net6.0\sandbox.runtimeconfig.json
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\bin\Debug\net6.0\sandbox.dll
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\bin\Debug\net6.0\sandbox.pdb
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\sandbox.csproj.AssemblyReference.cache
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\sandbox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\sandbox.AssemblyInfoInputs.cache
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\sandbox.AssemblyInfo.cs
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\sandbox.csproj.CoreCompileInputs.cache
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\sandbox.dll
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\refint\sandbox.dll
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\sandbox.pdb
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\sandbox.genruntimeconfig.cache
+C:\Users\gaspe\Desktop\CESI\A3\Bloc 2\sandbox\sandbox\obj\Debug\net6.0\ref\sandbox.dll

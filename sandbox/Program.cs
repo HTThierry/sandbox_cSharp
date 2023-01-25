@@ -28,6 +28,7 @@
                     break;
                 case 2:
                     Console.WriteLine("Sauvegarde Incrementale");
+                    p.Incremental(path1, path2);
                     break;
                 default:
                     Console.WriteLine("Sauvegarde Complète");
@@ -42,16 +43,44 @@
             Console.WriteLine("Vérification de l'existance du dossier..........");
             if (System.IO.Directory.Exists(PathFrom))
             {
-                //Now Create all of the directories
+                Console.WriteLine("Dossier trouvé..........");
+                Console.WriteLine("Copie en cours..........");
                 foreach (string dirPath in Directory.GetDirectories(PathFrom, "*", SearchOption.AllDirectories))
                 {
                     Directory.CreateDirectory(dirPath.Replace(PathFrom, PathTo));
                 }
-                Console.WriteLine("Copie en cours..........");
                 foreach (string newPath in Directory.GetFiles(PathFrom, "*.*", SearchOption.AllDirectories))
                 {
                     File.Copy(newPath, newPath.Replace(PathFrom, PathTo), true);
+                    Console.WriteLine("copie de " + newPath);
                 }
+            }
+        }
+
+        void Incremental(string PathFrom, string PathTo)
+        {
+            int modifiedFiles = 0;
+            
+            Console.WriteLine("Vérification de l'existance du dossier..........");
+            if (System.IO.Directory.Exists(PathFrom))
+            {
+                Console.WriteLine("Dossier trouvé..........");
+                Console.WriteLine("Copie en cours..........");
+                foreach (string dirPath in Directory.GetDirectories(PathFrom, "*", SearchOption.AllDirectories))
+                {
+                    Directory.CreateDirectory(dirPath.Replace(PathFrom, PathTo));
+                }
+                foreach (string newPath in Directory.GetFiles(PathFrom, "*.*", SearchOption.AllDirectories))
+                {
+                    if (File.GetLastWriteTime(newPath) > File.GetLastWriteTime(newPath.Replace(PathFrom, PathTo)))
+                    {
+                        File.Copy(newPath, newPath.Replace(PathFrom, PathTo), true);
+                        Console.WriteLine("copie de " + newPath);
+                        modifiedFiles++;
+                    }
+                }
+                Console.WriteLine("Copie terminée..........");
+                Console.WriteLine("Nombre de fichiers modifiés : " + modifiedFiles);
             }
         }
     }
